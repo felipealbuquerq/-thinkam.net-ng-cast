@@ -199,16 +199,16 @@ export class NgCastComponent implements OnInit, AfterViewChecked {
   }
 
   toggleMaximize(): void {
-    if (!this.mobileCheck()) {
+    //if (!this.mobileCheck()) {
       this.api.fsAPI.toggleFullscreen(this.media);
-    } else {
-      if (document.fullscreenElement) {
-        document.exitFullscreen();
-      } else {
-        this.requestFullscreenVideo();
-        this.lockScreenInLandscape();
-      }    
-    }
+    //} else {
+    //  if (document.fullscreenElement) {
+    //    document.exitFullscreen();
+    //  } else {
+    //    this.requestFullscreenVideo();
+    //    this.lockScreenInLandscape();
+    //  }    
+    //}
   }
 
   requestFullscreenVideo() {
